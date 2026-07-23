@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatOS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="terminal">
+  <div class="titlebar">
+    <div class="traffic-lights">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="titlebar-title">
+      <span class="titlebar-icon">&#128062;</span>
+      <span class="titlebar-name">CatOS</span>
+      <span class="titlebar-version">kernel 5.15.0-catos &middot; x86_64</span>
+    </div>
+    <div class="titlebar-spacer"></div>
+  </div>
+  <div class="terminal-body">
+    <div id="output"></div>
+    <div id="input-line">
+      <span class="prompt"></span>
+      <span id="input-text"></span>
+      <span class="cursor">&#9608;</span>
+    </div>
+  </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
